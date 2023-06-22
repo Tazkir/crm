@@ -12,6 +12,7 @@ For Live Demo visit here https://crm-amber.vercel.app/
 - NEXTjs 13 (app route)
 - Tailwind Css
 - Shadcn
+- TanStack
 - Fakerjs
 
 ## Deploy on Vercel
