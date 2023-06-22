@@ -15,6 +15,24 @@ For Live Demo visit here https://crm-amber.vercel.app/
 - TanStack
 - Fakerjs
 
-# Getting Started
+## Installation
 
-## Deploy on Vercel
+```bash
+git clone git@github.com:Tazkir/crm.git
+cd crm
+npm install
+npm run dev
+```
+
+## Getting Started
+
+- app/page.tsx = Home page where it render table client list component.
+- app/Client/page.tsx = Client list Data Table component.
+- app/Client/dataTable.tsx = Reusable component provide by shadcn.
+- app/Client/dataTable.tsx = Define coloum and row data type for the data table.
+- app/AddUser/page.tsx = Button and modal dialog for adding new client details.
+- app/ClientDetails/[id]/page.tsx = Dynamic route where display client details page.
+
+## Improvement
+
+- Fix table mobile responsive screen
