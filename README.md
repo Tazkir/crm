@@ -35,7 +35,11 @@ npm run dev
 
 ### Instruction
 
-Firstly the data table set with two random static fake data. To add new client data, click on New Client Button and it will pop a dialog form for client details. Fill the form and click Save Changes button after that close the dialog and click refresh button to update latest data. To view Client Details click the actions button on the far right row and click User Details. If the client inactive, just click the inactive button and click refresh button top of the data table for lastest change. For sorting status and create date, click the row data table with arrow icon for ascending and click back for decending the data.
+To begin with, the data table is initially populated with two randomly generated static fake data entries. If you wish to add a new client, simply click on the "New Client" button, which will open a dialog form where you can enter the client's details. Once you have filled out the form, click the "Save Changes" button, then close the dialog. To ensure that the latest data is displayed, click the refresh button.
+
+To view the details of a specific client, locate the row in the table and click on the actions button, which is located at the far right. From the dropdown menu, select "User Details" to access the client's detailed information. If you want to mark the client as inactive, click the "Inactive" button. Remember to click the refresh button at the top of the data table to reflect the latest changes.
+
+For sorting the data based on the status and creation date, simply click on the respective column in the data table. Clicking on the column with an arrow icon will sort the data in ascending order, while clicking again will sort it in descending order.
 
 ## Improvement
 
