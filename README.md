@@ -33,6 +33,11 @@ npm run dev
 - app/AddUser/page.tsx = Button and modal dialog for adding new client details.
 - app/ClientDetails/[id]/page.tsx = Dynamic route where display client details page.
 
+### Instruction
+
+Firstly the data table set with two random static fake data. To add new client data, click on New Client Button and it will pop a dialog form for client details. Fill the form and click Save Changes button after that close the dialog and click refresh button to update latest data. To view Client Details click the actions button on the far right row and click User Details. If the client inactive, just click the inactive button and click refresh button top of the data table for lastest change. For sorting status and create date, click the row data table with arrow icon for ascending and click back for decending the data.
+
 ## Improvement
 
-- Fix table mobile responsive screen
+- Fix table mobile responsive screen.
+- Use filter instead of sorting createdAt row.
