@@ -29,7 +29,7 @@ npm run dev
 - app/page.tsx = Home page where it render table client list component.
 - app/Client/page.tsx = Client list Data Table component.
 - app/Client/dataTable.tsx = Reusable component provide by shadcn.
-- app/Client/dataTable.tsx = Define coloum and row data type for the data table.
+- app/Client/columns.tsx = Define coloum and row data type for the data table.
 - app/AddUser/page.tsx = Button and modal dialog for adding new client details.
 - app/ClientDetails/[id]/page.tsx = Dynamic route where display client details page.
 
