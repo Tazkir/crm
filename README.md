@@ -43,5 +43,5 @@ For sorting the data based on the status and creation date, simply click on the 
 
 ## Improvement
 
-- Fix table mobile responsive screen.
+- Fix overflow table mobile responsive screen.
 - Use filter instead of sorting createdAt row.

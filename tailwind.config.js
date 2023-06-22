@@ -7,6 +7,10 @@ module.exports = {
     './app/**/*.{ts,tsx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '1rem',
+    },
     extend: {
       colors: {
         border: 'hsl(var(--border))',
