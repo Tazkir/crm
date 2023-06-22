@@ -66,13 +66,14 @@ export default function UserList() {
   };
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container w-full mx-auto py-10">
       <div className="flex justify-end items-end py-5 gap-3">
         <Button variant="outline" onClick={handleRefresh}>
           Refresh
         </Button>
         <AddUser />
       </div>
+
       <DataTable columns={columns} data={data} />
     </div>
   );
