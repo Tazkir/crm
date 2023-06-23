@@ -25,6 +25,14 @@ npm install
 npm run dev
 ```
 
+### For Testing
+
+```bash
+npm run cypress
+```
+
+- cypress/e2e/app.cy.ts = Main test file with command testing for relevent question
+
 ## Getting Started
 
 - app/page.tsx = Home page where it render table client list component.
