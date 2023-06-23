@@ -14,7 +14,7 @@ async function getData(): Promise<User[]> {
     {
       id: faker.string.uuid().slice(0, 8),
       name: faker.person.firstName(),
-      contact: faker.phone.number(),
+      contact: faker.phone.number().slice(0, 13),
       avatar: faker.image.avatar(),
       organization: faker.company.name(),
       assigned: faker.person.firstName(),
@@ -24,7 +24,7 @@ async function getData(): Promise<User[]> {
     {
       id: faker.string.uuid().slice(0, 8),
       name: faker.person.firstName(),
-      contact: faker.phone.number(),
+      contact: faker.phone.number().slice(0, 13),
       avatar: faker.image.avatar(),
       organization: faker.company.name(),
       assigned: faker.person.firstName(),
