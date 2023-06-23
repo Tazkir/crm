@@ -106,7 +106,7 @@ function AddUser() {
                 id="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="col-span-3"
+                className="name col-span-3"
                 required
               />
             </div>
@@ -119,7 +119,7 @@ function AddUser() {
                 type="tel"
                 value={contact}
                 onChange={(e) => setContact(e.target.value)}
-                className="col-span-3"
+                className="contact col-span-3"
                 required
               />
             </div>
@@ -144,7 +144,7 @@ function AddUser() {
                 type="text"
                 value={organization}
                 onChange={(e) => setOrganization(e.target.value)}
-                className="col-span-3"
+                className="org col-span-3"
                 required
               />
             </div>
@@ -156,7 +156,7 @@ function AddUser() {
                 id="assigned"
                 value={assigned}
                 onChange={(e) => setAssignedTo(e.target.value)}
-                className="col-span-3"
+                className="assigned col-span-3"
                 required
               />
             </div>

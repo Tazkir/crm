@@ -77,7 +77,7 @@ export default function UserList() {
     <div className="container mx-auto py-10">
       <div className="flex justify-end items-end py-5 gap-3">
         {/* Button component with variant "outline" and click event handler */}
-        <Button variant="outline" onClick={handleRefresh}>
+        <Button variant="outline" id="refresh" onClick={handleRefresh}>
           Refresh
         </Button>
         {/* Component to add a new user */}

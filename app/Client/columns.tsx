@@ -77,7 +77,7 @@ export const columns: ColumnDef<User>[] = [
       return (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="h-8 w-8 p-0">
+            <Button id="action" variant="ghost" className="h-8 w-8 p-0">
               <span className="sr-only">Open menu</span>
               <MoreHorizontal className="h-4 w-4" />
             </Button>
@@ -90,14 +90,14 @@ export const columns: ColumnDef<User>[] = [
             <DropdownMenuSeparator />
 
             <DropdownMenuItem
-              className="cursor-pointer"
+              className="cursor-pointer active"
               data-user-id={client.id}
               onClick={activehandle}
             >
               Active
             </DropdownMenuItem>
             <DropdownMenuItem
-              className="cursor-pointer"
+              className="cursor-pointer inactive"
               data-user-id={client.id}
               onClick={inactivehandle}
             >
