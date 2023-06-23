@@ -6,6 +6,8 @@ import { useParams } from 'next/navigation';
 
 export default function ClientDetails() {
   const [client, setClient] = useState<User | null>(null);
+
+  // Set id based on url client id
   const { id } = useParams();
 
   useEffect(() => {
@@ -13,8 +15,10 @@ export default function ClientDetails() {
     if (storedData) {
       const clients = JSON.parse(storedData);
 
+      // Match the id from localstorage
       const selectedClient = clients.find((i: User) => i.id === id);
 
+      // Set selected client into state
       setClient(selectedClient);
     }
   }, [id]);

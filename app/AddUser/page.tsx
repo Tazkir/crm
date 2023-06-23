@@ -20,6 +20,7 @@ import { User } from '../Client/columns';
 function AddUser() {
   const [clients, setClients] = useState<User[]>([]);
 
+  // State variables to manage form input values
   const [id, setId] = useState(faker.string.uuid().slice(0, 8));
   const [name, setName] = useState('');
   const [contact, setContact] = useState('');
@@ -27,6 +28,7 @@ function AddUser() {
   const [organization, setOrganization] = useState('');
   const [assigned, setAssignedTo] = useState('');
 
+  // Function to handle form submission
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
@@ -58,7 +60,7 @@ function AddUser() {
     setAssignedTo('');
 
     window.alert(
-      'Successfully Added New Client! Refresh the table for latest data.'
+      'Successfully Added New Client! Refresh the table for the latest data.'
     );
   };
 
