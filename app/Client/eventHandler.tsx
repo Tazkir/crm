@@ -14,7 +14,7 @@ const activehandle = (event: React.FormEvent) => {
       if (client.id === userId) {
         return {
           ...client,
-          status: 'active',
+          status: 'ACTIVE',
         };
       }
       return client;
@@ -41,7 +41,7 @@ const inactivehandle = (event: React.FormEvent) => {
       if (client.id === userId) {
         return {
           ...client,
-          status: 'inactive',
+          status: 'INACTIVE',
         };
       }
       return client;
