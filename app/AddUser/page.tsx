@@ -59,11 +59,13 @@ function AddUser() {
     setOrganization('');
     setAssignedTo('');
 
+    // Alert the user client added with alert prompt
     window.alert(
       'Successfully Added New Client! Refresh the table for the latest data.'
     );
   };
 
+  // This useEffect hook retrieves client data from the local storage and sets it in the state variable 'clients' when the component mounts.
   useEffect(() => {
     const storedClients = localStorage.getItem('clients');
     if (storedClients) {

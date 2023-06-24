@@ -15,7 +15,7 @@ export default function ClientDetails() {
     if (storedData) {
       const clients = JSON.parse(storedData);
 
-      // Match the id from localstorage
+      // Match the id from local storage
       const selectedClient = clients.find((i: User) => i.id === id);
 
       // Set selected client into state
@@ -23,6 +23,7 @@ export default function ClientDetails() {
     }
   }, [id]);
 
+  // If client data is not available yet, show a loading message
   if (!client) {
     return (
       <div className="flex flex-col items-center justify-center">
