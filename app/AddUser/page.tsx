@@ -84,7 +84,7 @@ function AddUser() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">+ New Client</Button>
+        <Button variant="default">+ New Client</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
