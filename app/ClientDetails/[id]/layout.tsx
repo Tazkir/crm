@@ -14,7 +14,7 @@ function RootLayout() {
   const { id } = useParams();
   return (
     <div className="flex flex-col min-h-screen justify-center items-center gap-5">
-      <div className="bg-slate-400 rounded-2xl p-2">
+      <div className="bg-slate-400/20 rounded-2xl p-2">
         <Link href="/" className="text-lg font-bold">
           &lt; back
         </Link>
