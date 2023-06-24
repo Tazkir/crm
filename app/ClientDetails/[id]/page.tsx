@@ -34,6 +34,7 @@ export default function ClientDetails() {
 
   return (
     <div key={client.id} className="flex flex-col justify-center gap-5 text">
+      <p>ID: {client.id}</p>
       <p>Name: {client.name}</p>
       <p>Contact Info: {client.contact}</p>
       <p>Organization: {client.organization}</p>
