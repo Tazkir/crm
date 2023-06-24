@@ -20,7 +20,7 @@ export type User = {
   avatar: string;
   organization: string;
   assigned: string;
-  status: 'active' | 'inactive';
+  status: 'ACTIVE' | 'INACTIVE';
   createdAt: string;
 };
 

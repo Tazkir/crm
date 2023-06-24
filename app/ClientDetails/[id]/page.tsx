@@ -39,7 +39,7 @@ export default function ClientDetails() {
       <p>Contact Info: {client.contact}</p>
       <p>Organization: {client.organization}</p>
       <p>Assigned To: {client.assigned}</p>
-      <p>Status: {client.status === 'active' ? 'Active' : 'Inactive'}</p>
+      <p>Status: {client.status}</p>
       <p>Created At: {client.createdAt}</p>
     </div>
   );

@@ -14,7 +14,7 @@ export async function getData(): Promise<User[]> {
       avatar: faker.image.avatar(),
       organization: faker.company.name(),
       assigned: faker.person.firstName(),
-      status: faker.helpers.arrayElement(['active', 'inactive']),
+      status: faker.helpers.arrayElement(['ACTIVE', 'INACTIVE']),
       createdAt: faker.date.recent().toLocaleString(),
     },
     {
@@ -24,7 +24,7 @@ export async function getData(): Promise<User[]> {
       avatar: faker.image.avatar(),
       organization: faker.company.name(),
       assigned: faker.person.firstName(),
-      status: faker.helpers.arrayElement(['active', 'inactive']),
+      status: faker.helpers.arrayElement(['ACTIVE', 'INACTIVE']),
       createdAt: faker.date.recent().toLocaleString(),
     },
   ];

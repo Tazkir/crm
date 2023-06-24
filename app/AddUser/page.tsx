@@ -54,7 +54,7 @@ function AddUser() {
       avatar,
       organization,
       assigned,
-      status: 'active',
+      status: 'ACTIVE',
       createdAt: new Date().toLocaleString(),
     };
 
