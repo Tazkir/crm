@@ -17,6 +17,9 @@ import { faker } from '@faker-js/faker';
 import { useEffect, useState } from 'react';
 import { User } from '../Client/columns';
 
+import { ToastAction } from '@/components/ui/toast';
+import { useToast } from '@/components/ui/use-toast';
+
 function AddUser() {
   const [clients, setClients] = useState<User[]>([]);
 
@@ -27,6 +30,17 @@ function AddUser() {
   const [avatar, setAvatar] = useState('');
   const [organization, setOrganization] = useState('');
   const [assigned, setAssignedTo] = useState('');
+
+  const { toast } = useToast();
+
+  // This useEffect hook retrieves client data from the local storage and sets it in the state variable 'clients' when the component mounts.
+  useEffect(() => {
+    const storedClients = localStorage.getItem('clients');
+    if (storedClients) {
+      const parsedClients: User[] = JSON.parse(storedClients);
+      setClients(parsedClients);
+    }
+  }, []);
 
   // Function to handle form submission
   const handleSubmit = (event: React.FormEvent) => {
@@ -52,27 +66,20 @@ function AddUser() {
     localStorage.setItem('clients', JSON.stringify(updatedClients));
 
     // Reset form fields
-    setId('');
+    setId(faker.string.uuid().slice(0, 8));
     setName('');
     setContact('');
     setAvatar('');
     setOrganization('');
     setAssignedTo('');
 
-    // Alert the user client added with alert prompt
-    window.alert(
-      'Successfully Added New Client! Refresh the table for the latest data.'
-    );
+    // Toast notification for user that client added
+    toast({
+      title: 'Client Added!',
+      description: 'Click Refresh for latest data list',
+      action: <ToastAction altText="Okey">Okey</ToastAction>,
+    });
   };
-
-  // This useEffect hook retrieves client data from the local storage and sets it in the state variable 'clients' when the component mounts.
-  useEffect(() => {
-    const storedClients = localStorage.getItem('clients');
-    if (storedClients) {
-      const parsedClients: User[] = JSON.parse(storedClients);
-      setClients(parsedClients);
-    }
-  }, []);
 
   return (
     <Dialog>

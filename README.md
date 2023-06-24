@@ -38,7 +38,9 @@ npm run cypress
 - app/page.tsx = Home page where it render table client list component.
 - app/Client/page.tsx = Client list Data Table component.
 - app/Client/dataTable.tsx = Reusable component provide by shadcn.
-- app/Client/columns.tsx = Define coloum and row data type for the data table.
+- app/Client/columns.tsx = Define colomn data type for the data table.
+- app/Client/eventHandler.tsx = Splitting event handler for status as reusable component.
+- app/Client/getData.tsx = Reusable component for retrive data client.
 - app/AddUser/page.tsx = Button and modal dialog for adding new client details.
 - app/ClientDetails/[id]/page.tsx = Dynamic route where display client details page.
 

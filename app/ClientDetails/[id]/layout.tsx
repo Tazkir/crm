@@ -1,6 +1,9 @@
+'use client';
+
 import React from 'react';
 import ClientDetails from './page';
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 
 export const metadata = {
   title: 'Client Details',
@@ -8,15 +11,16 @@ export const metadata = {
 };
 
 function RootLayout() {
+  const { id } = useParams();
   return (
-    <div>
-      <div className="flex flex-col min-h-screen justify-center items-center">
+    <div className="flex flex-col min-h-screen justify-center items-center gap-5">
+      <div className="bg-slate-400 rounded-2xl p-2">
         <Link href="/" className="text-lg font-bold">
-          Back
+          &lt; back
         </Link>
-        <h1>Client Details</h1>
-        <ClientDetails />
+        <h1 className="text-3xl">Client Details: {id}</h1>
       </div>
+      <ClientDetails />
     </div>
   );
 }

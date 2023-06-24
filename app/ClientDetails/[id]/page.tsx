@@ -33,12 +33,12 @@ export default function ClientDetails() {
   }
 
   return (
-    <div key={client.id} className="flex flex-col items-center">
+    <div key={client.id} className="flex flex-col justify-center gap-5 text">
       <p>Name: {client.name}</p>
       <p>Contact Info: {client.contact}</p>
       <p>Organization: {client.organization}</p>
       <p>Assigned To: {client.assigned}</p>
-      <p>Status: {client.status}</p>
+      <p>Status: {client.status === 'active' ? 'Active' : 'Inactive'}</p>
       <p>Created At: {client.createdAt}</p>
     </div>
   );
