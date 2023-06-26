@@ -25,7 +25,7 @@ export default function UserList() {
 
   // Function to fetch data from a source (in this case, using getData function)
   const fetchData = async () => {
-    const fetchedData = await getData();
+    const fetchedData = (await getData()).reverse();
     setData(fetchedData);
   };
 
