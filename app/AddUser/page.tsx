@@ -31,6 +31,8 @@ function AddUser() {
   const [organization, setOrganization] = useState('');
   const [assigned, setAssignedTo] = useState('');
 
+  const [t, setT] = useState(true);
+
   const { toast } = useToast();
 
   // This useEffect hook retrieves client data from the local storage and sets it in the state variable 'clients' when the component mounts.
