@@ -79,7 +79,7 @@ function AddUser() {
     toast({
       title: 'Client Added!',
       description: 'Click Refresh for latest data list',
-      action: <ToastAction altText="Okey">Okey</ToastAction>,
+      action: <ToastAction altText="Okay">Okay</ToastAction>,
     });
   };
 

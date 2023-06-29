@@ -3,6 +3,7 @@
 import { User } from '@/app/Client/columns';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
+import { Skeleton } from '@/components/ui/skeleton';
 
 export default function ClientDetails() {
   const [client, setClient] = useState<User | null>(null);
@@ -26,8 +27,11 @@ export default function ClientDetails() {
   // If client data is not available yet, show a loading message
   if (!client) {
     return (
-      <div className="flex flex-col items-center justify-center">
-        Loading...
+      <div className="flex flex-col justify-center gap-5">
+        <Skeleton className="h-4 w-[250px]" />
+        <Skeleton className="h-4 w-[250px]" />
+        <Skeleton className="h-4 w-[250px]" />
+        <Skeleton className="h-4 w-[200px]" />
       </div>
     );
   }

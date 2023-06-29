@@ -30,7 +30,7 @@ describe('Adding Client', () => {
 
     cy.get('a').contains('Client Detail').wait(3000).click();
 
-    cy.get('a').contains('back').wait(3000).click();
+    cy.get('.backbut').wait(3000).click();
 
     cy.get('table').get('#action').should('be.visible').wait(1000).click();
 
@@ -38,7 +38,7 @@ describe('Adding Client', () => {
 
     cy.get('a').contains('Client Detail').wait(3000).click();
 
-    cy.get('a').contains('back').wait(3000).click();
+    cy.get('.backbut').wait(3000).click();
 
     cy.get('#refresh').click().wait(3000);
   });

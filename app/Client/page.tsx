@@ -8,6 +8,7 @@ import { DataTable } from './data-table';
 import { Button } from '@/components/ui/button';
 import { getData } from './getData';
 import AddUser from '../AddUser/page';
+import { ModeToggle } from './ModeToggle';
 
 export default function UserList() {
   const [data, setData] = useState<User[]>([]);
@@ -37,6 +38,8 @@ export default function UserList() {
   return (
     <div className="container mx-auto py-10">
       <div className="flex justify-end py-5 gap-3">
+        <ModeToggle />
+
         {/* Button component with variant "outline" and click event handler */}
         <Button variant="outline" id="refresh" onClick={handleRefresh}>
           Refresh
